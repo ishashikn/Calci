@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="heading">CALCULATOR</h1>
+    <div class = "main">
+        <div class = "main_header">
+            <div class="display" id="display" class=" display .text">
+            0    
+            </div>
+            <div class="body">
+                <div class="buttons">
+                    <button id ="button1" onclick="buttonpress('7')">7</button>
+                    <button id ="button2" onclick="buttonpress('8')">8</button>
+                    <button id ="button3" onclick="buttonpress('9')"> 9</button>
+                    <button id="button4" onclick="deleteLastEle()"> DEL</button>
+                    <button id="button5" onclick="buttonpress('4')"> 4</button>
+                    <button id="button6" onclick="buttonpress('5')">5 </button>
+                    <button id="button7" onclick="buttonpress('6')">6</button>
+                    <button id="button8" onclick="setoperations('+')">+ </button>
+                    <button id="button9" onclick="buttonpress('1')"> 1</button>
+                    <button id="button10" onclick="buttonpress('2')"> 2</button>
+                    <button id="button11" onclick="buttonpress('3')">3</button>
+                    <button id="button12" onclick="setoperations('-')">- </button>
+                    <button id="button13" onclick="buttonpress('.')">. </button>
+                    <button id="button14" onclick="buttonpress('0')">0 </button>
+                    <button id="button15" onclick="setoperations('/')"> /</button>
+                    <button id="button16" onclick="setoperations('x')">x</button>   
+                </div>
+
+
+                <div class="footer">
+                    <div class="buttons">
+
+                        <button id="button17" onclick="resetdisplay()"> RESET</button>
+                        <button id="button18" onclick="CalciResults()">= </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="first.js"> </script>
+</body>
+</html>
